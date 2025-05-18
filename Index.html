@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion de Parking v2.0</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./SRC/logo/Icono 002.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="items-menu">
+            
+            <a href="./Index.html"><img src="/SRC/logo/Isologo azul sin fondo.svg" alt="Logo" class="icono-1"></a>
+            
+        </div>
+    </header>
+    <main>
+        <section class="bloque-de-datos">
+            <div class="bloque-de-inputs">
+                <h2 class="titulo-2">Datos del vehiculos</h2>
+                <div class="datos-de-vehiculo">
+                    <div class="tipo-de-vehiculo">
+                        <input type="radio" name="vehiculo" id="tipo-carro" hidden>
+                        <label for="tipo-carro" class="icon-label">
+                            <img src="./SRC/Iconos/carro sin selecionar.svg" alt="Icono de carro" class="default-icon icono-de-tipo-de-vehiculo ">
+                        </label>
+                        <input type="radio" name="vehiculo" id="tipo-moto" hidden>
+                        <label for="tipo-moto" class="icon-label">
+                            <img src="./SRC/Iconos/Moto sin selecionar.svg" alt="icono de moto" class="default-icon icono-de-tipo-de-vehiculo">
+                        </label>
+                    </div>
+                    <input type="text" name="placa-de-vehiculo" id="placa-del-vehiculo" required placeholder="Introduzca la placa" class="input-type-1">
+                    <button type="submit" class="boton-2" id="registro-de-vehiculo">Registrar vehiculo</button>
+                </div>
+            </div>
+        </section>
+        <div class="gestion-de-vehiculos">
+            <div class="tablero-de-vehiculos">
+                <div class="encabezado-de-bloque-de-placas">
+                    <h2 class="titulo-2">vehiculos registrados</h2>
+                    <form action="" class="buscador-de-placa">
+                        <input type="search" name="" id="buscador" placeholder="Buscar placa..." class="input-type-1">
+                        <button type="submit" id="btnbuscar" class="boton-2">Buscar</button>
+                    </form>
+                </div>
+                <div class="tarjetas-de-vehiculos">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/java.js"></script>
+</body>
+</html>
